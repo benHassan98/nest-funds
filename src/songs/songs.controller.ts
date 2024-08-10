@@ -7,7 +7,9 @@ export class SongsController {
     constructor(private readonly songsService:SongsService){}
 
     @Get()
-    findAll(){}
+    findAll(){
+        return this.songsService.findAll();
+    }
 
     @Get("/:id")
     findOneById(){}
